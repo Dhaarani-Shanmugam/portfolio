@@ -1,6 +1,6 @@
 # portfolio
 
-Portfolio Bio
+Bio
 
 Aspiring Full Stack Developer skilled in HTML, CSS, JavaScript, and Python. Passionate about building responsive and user-friendly web applications.
 
