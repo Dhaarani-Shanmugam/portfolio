@@ -1,0 +1,83 @@
+header{
+    text-align:center;
+    padding:20px;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5
+}
+
+section{
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius:10px;
+}
+
+footer{
+    text-align: center;
+    padding:15px;
+    background: #333;
+    color:white
+}
+.blink{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    animation: blinkEffect 2s infinite;
+}
+
+/*keyframes for blinking*/
+@keyframes blinkEffect{
+    0%, 100% {opacity:1;}
+    50% {opacity:0.3;}  /*softer blink*/
+    
+}
+
+.moving-text{
+    overflow: hidden;   /*hidden extra text*/
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 10px;
+}
+.moving-text p{
+    color: #444;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 100%; /*start from outside*/
+    animation: moveText 10s linear infinite;
+}
+
+/*Smooth Right -> Left animation*/
+@keyframes moveText{
+    0%{
+        transform:translateX(100%);    
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}
+nav ul{
+    display: flex;
+    justify-content: center; /*centers horizontally*/
+    list-style: none;   /*remove bullets*/
+    padding: 0;
+    margin: 0;
+    gap: 30px;      /*space between items*/
+}
+
+
+nav ul li a{
+    text-decoration:none; /*remove underline from links*/
+    color: blueviolet;        /*Sets text color to black*/
+    font-weight: bold;    /*Makes text bold*/
+    font-size: 20px;      /*Sets  font size*/
+}
+
+nav ul li a:hover {
+    color: blue;        /*hover effect*/
+}
